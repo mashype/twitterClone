@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/mashype/Dropbox/Development/iOS/TwitterClone/TwitterClone/Controller/HomeDatasourceController+navbar.swift">
+   </FileRef>
+   <FileRef
       location = "group:TwitterClone.xcodeproj">
    </FileRef>
    <FileRef
