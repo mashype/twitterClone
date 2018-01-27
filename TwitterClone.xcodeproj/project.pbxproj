@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		591E8030201B66A700CF6D83 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E802F201B66A700CF6D83 /* HomeDatasourceController.swift */; };
-		591E8035201B6DFF00CF6D83 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E8034201B6DFF00CF6D83 /* Cells.swift */; };
+		591E8035201B6DFF00CF6D83 /* UserHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E8034201B6DFF00CF6D83 /* UserHeaderFooter.swift */; };
 		591E8037201B6E4700CF6D83 /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E8036201B6E4700CF6D83 /* HomeDatasource.swift */; };
+		591E8039201BFB5B00CF6D83 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E8038201BFB5A00CF6D83 /* User.swift */; };
+		599E5216201C050D00E48F21 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599E5215201C050D00E48F21 /* UserCell.swift */; };
 		59F369292018CB5C009D8C27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F369282018CB5C009D8C27 /* AppDelegate.swift */; };
 		59F369302018CB5C009D8C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F3692F2018CB5C009D8C27 /* Assets.xcassets */; };
 		59F369332018CB5C009D8C27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F369312018CB5C009D8C27 /* LaunchScreen.storyboard */; };
@@ -19,8 +21,10 @@
 
 /* Begin PBXFileReference section */
 		591E802F201B66A700CF6D83 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
-		591E8034201B6DFF00CF6D83 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		591E8034201B6DFF00CF6D83 /* UserHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderFooter.swift; sourceTree = "<group>"; };
 		591E8036201B6E4700CF6D83 /* HomeDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
+		591E8038201BFB5A00CF6D83 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		599E5215201C050D00E48F21 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		59F369252018CB5C009D8C27 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F369282018CB5C009D8C27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59F3692F2018CB5C009D8C27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				591E8036201B6E4700CF6D83 /* HomeDatasource.swift */,
+				591E8038201BFB5A00CF6D83 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -71,7 +76,8 @@
 		591E8033201B6DE600CF6D83 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				591E8034201B6DFF00CF6D83 /* Cells.swift */,
+				591E8034201B6DFF00CF6D83 /* UserHeaderFooter.swift */,
+				599E5215201C050D00E48F21 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,9 +254,11 @@
 			files = (
 				591E8037201B6E4700CF6D83 /* HomeDatasource.swift in Sources */,
 				59F369292018CB5C009D8C27 /* AppDelegate.swift in Sources */,
-				591E8035201B6DFF00CF6D83 /* Cells.swift in Sources */,
+				591E8039201BFB5B00CF6D83 /* User.swift in Sources */,
+				591E8035201B6DFF00CF6D83 /* UserHeaderFooter.swift in Sources */,
 				591E8030201B66A700CF6D83 /* HomeDatasourceController.swift in Sources */,
 				59F3693B2018CD48009D8C27 /* HomeController.swift in Sources */,
+				599E5216201C050D00E48F21 /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
