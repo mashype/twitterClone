@@ -12,7 +12,7 @@ let twitterBlue = UIColor(r: 61, g: 167, b: 244)
 
 //custom classes for the framework
 class UserHeader: DatasourceCell {
-    
+	
     let textLabel: UILabel = {
         let label = UILabel()
         label.text = "WHO TO FOLLOW"
@@ -23,7 +23,7 @@ class UserHeader: DatasourceCell {
     
     override func setupViews() {
         super.setupViews()
-        
+        backgroundColor = .white
         separatorLineView.isHidden = false
         separatorLineView.backgroundColor = UIColor(r: 100, g: 100, b: 100)
         
@@ -41,11 +41,21 @@ class UserFooter: DatasourceCell {
         label.textColor = twitterBlue
         return label
     }()
-    
+	
     override func setupViews() {
         super.setupViews()
-        addSubview(textLabel)
-        textLabel.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 12, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
+		
+		let whiteBackgroundView = UIView()
+		whiteBackgroundView.backgroundColor = .white
+		
+		//whiteBackground has to be added first so the text will show on top of it.
+		addSubview(whiteBackgroundView)
+		addSubview(textLabel)
+		
+		
+		whiteBackgroundView.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 14, rightConstant: 0, widthConstant: 0, heightConstant: 0)
+		
+		textLabel.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 12, bottomConstant: 14, rightConstant: 0, widthConstant: 0, heightConstant: 0)
     }
 }
 

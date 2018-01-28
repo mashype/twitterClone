@@ -20,11 +20,17 @@ class HomeDatasource: Datasource {
         
         return[sethUser, brianUser, rayUser]
     }()
+	
+	let tweets = ["poop", "caca", "cheese"]
 
     
     //number of items is an LBTA function that is the items in the body of the collection view
     override func numberOfItems(_ section: Int) -> Int {
-        return users.count
+		if section == 1 {
+			return tweets.count
+		} else {
+			return users.count
+		}
     }
     
     override func headerClasses() -> [DatasourceCell.Type]? {
@@ -34,12 +40,17 @@ class HomeDatasource: Datasource {
     override func footerClasses() -> [DatasourceCell.Type]? {
         return [UserFooter.self]
     }
-    
+	
+	//this returns an array of cell types in the sections. Tweets will now be in the second section.
     override func cellClasses() -> [DatasourceCell.Type] {
-        return [UserCell.self]
+        return [UserCell.self, TweetCell.self]
     }
     
     override func item(_ indexPath: IndexPath) -> Any? {
         return users[indexPath.row]
     }
+	
+	override func numberOfSections() -> Int {
+		return 2
+	}
 }
